@@ -51,8 +51,8 @@ zero12 = `${rbrb12}`
 
 let perfect = (pickRandom(['Anjir GG', 'Mantap', 'Sempurna', 'Dapet sesuatu', 'Besar Nih']))
 
-hsl = `
-*《 Hasil Berburu Kali Ini 》*
+hsl = 
+`*《 Hunting Results This Time》* 
  *🐂 = [ ${zero1} ]*	   	*🐃 = [ ${zero7} ]*
  *🐅 = [ ${zero2} ]*	  	 *🐮 = [ ${zero8} ]*
  *🐘 = [ ${zero3} ]*	  	 *🐒 = [ ${zero9} ]*
@@ -94,9 +94,9 @@ setTimeout(() => {
                      setTimeout(() => {
                      m.reply('_Sedang Berburu..._')
                      }, 0) 
-        } else conn.sendButton(m.chat, `*Sepertinya Anda Sudah Kecapekan*\n*Silahkan Istirahat Sejenak Sekitar ${timer}*\n*Untuk Bisa Melanjutkan Berburu Lagi*\n`, mess.wm, 'KANDANG', '#kandang', m )
-     } else conn.reply(m.chat, 'Upgrade sword dulu dah mau patah' ,m)
-   } else conn.reply(m.chat, 'beli sword dulu di .shop' ,m)
+   } else conn.sendButton(m.chat, `*Looks like you're tired*\n*Please take a short break about ${timer}*\n*To be able to continue hunting again*\n`, mess.wm, 'COA', '#cage', m )
+     } else conn.reply(m.chat, 'Upgrade sword was about to break' ,m)
+   } else conn.reply(m.chat, 'buy sword first at .shop' ,m)
 }
 handler.help = ['berburu']
 handler.tags = ['rpg']
