@@ -49,10 +49,10 @@ zero10 = `${rbrb10}`
 zero11 = `${rbrb11}`
 zero12 = `${rbrb12}`
 
-let perfect = (pickRandom(['Anjir GG', 'Mantap', 'Sempurna', 'Mancing Mania...', 'Besar Nih']))
+let perfect = (pickRandom(['GG', 'Great', 'Perfect', 'Fishing Mania...', 'Big Here']))
 
 hsl = `
-*《 Hasil Memancing Kali Ini 》*
+*《 Fishing Results This Time 》*
  *🦀 = [ ${zero2} ]*			*🐠 = [ ${zero6} ]*
  *🦞 = [ ${zero8} ]*			 *🐟 = [ ${zero11} ]*
  *🦐 = [ ${zero10} ]*			 *🐬 = [ ${zero7} ]*
@@ -94,9 +94,9 @@ setTimeout(() => {
                      setTimeout(() => {
                      m.reply('_Sedang Memancing..._')
                      }, 0) 
-        } else conn.sendButton(m.chat, `*Sepertinya Anda Sudah Kecapekan*\n*Silahkan Istirahat Sejenak Sekitar ${timer}*\n*Untuk Bisa Melanjutkan Memancing Lagi*\n`, mess.wm, 'KOLAM', '#kolam', m )
-     } else conn.reply(m.chat, 'Upgrade fishing rod dulu dah mau patah' ,m)
-   } else conn.reply(m.chat, 'beli fishing rod dulu di .shop' ,m)
+    } else conn.sendButton(m.chat, `*Looks like you are tired*\n*Please take a break for a while about ${timer}*\n*To be able to continue fishing again*\n`, mess.wm, 'POOL', '#pool', m )
+     } else conn.reply(m.chat, 'Upgrade fishing rod was about to break' ,m)
+   } else conn.reply(m.chat, 'buy fishing rod first at .shop' ,m)
 }
 handler.help = ['mancing']
 handler.tags = ['rpg']
