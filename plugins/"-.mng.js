@@ -8,8 +8,8 @@ let handler = async (m, { conn }) => {
     let hasiiil = (pickaxe == 1 ? Math.floor(Math.random() * 20) : '' || pickaxe == 2 ? Math.floor(Math.random() * 30) : '' || pickaxe == 3 ? Math.floor(Math.random() * 40) : '' || pickaxe == 4 ? Math.floor(Math.random() * 50) : '' || pickaxe == 5 ? Math.floor(Math.random() * 60) : '' )
     let hasiil = (pickaxe == 1 ? Math.ceil(Math.random() * 500) : '' || pickaxe == 2 ? Math.ceil(Math.random() * 400) : '' || pickaxe == 3 ? Math.ceil(Math.random() * 300) : '' || pickaxe == 4 ? Math.ceil(Math.random() * 250) : '' || pickaxe == 5 ? Math.ceil(Math.random() * 200) : '' )
     let konz = Math.floor(Math.random() * 100)
-    let goa = (pickRandom(['Akhirnya', 'Ketemu!', 'Goanya besar Juga', 'Dalem nih', 'Akhirnya ketemu juga!', 'Ketemu Juga', 'Banyak Batu!', 'Kayaknya Goanya Bagus']))
-    let selesai = (pickRandom(['huuh', 'Selesai Juga', 'Kayaknya Sampah', 'Kayaknya Bagus', 'Perlu Upgrade pickaxe nih biar hasilnya bagus', 'Trash!', 'GG', 'Banyak Batu doang', 'Iron nya dikit', 'Diamond nya dikit', 'Cok banyak Diamond', 'Cok banyak Iron']))
+   let goa = (pickRandom(['Finally', 'Found it!', 'The cave is too big', 'Its deep', 'Finally found it!', 'Finding it', 'Lots of rocks!', 'Looks like a nice cave' ]))
+    let done = (pickRandom(['huuh', 'So done', 'Looks like trash', 'Sounds good', 'Need to upgrade this pickaxe for good results', 'Trash!', 'GG', 'Just a lot of rocks' , 'Little iron', 'Little diamond', 'How much Diamond', 'How much Iron']))
             
     if (pickaxe > 0) {
     if (global.db.data.users[m.sender].pickaxedurability > 99) {
@@ -49,9 +49,9 @@ Akhirnya Kamu Mendapatkan :
                      m.reply('_Sedang Mencari Goa..._')
                      }, 0) 
                      
-            } else m.reply(`Anda kelelahan dan Mager untuk mining, Silahkan tunggu ${waktur} lagi untuk mining!!`)
-         } else m.reply(`Pickaxe kamu akan hancur segera upgrade!`)
-     } else m.reply(`Kamu Belum Mempunyai Pickaxe, Segera beli dengan ketik .buy pickaxe !!`)
+        } else m.reply(`You are exhausted and lazy to mine, Please wait for ${timer} again to mine!!`)
+         } else m.reply(`Your pickaxe will be destroyed upgrade soon!`)
+     } else m.reply(`You don't have a Pickaxe yet, buy it now by typing .buy pickaxe !!`)
  }
 
 handler.help = ['mining']
