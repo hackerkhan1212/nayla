@@ -49,7 +49,7 @@ zero10 = `${rbrb10}`
 zero11 = `${rbrb11}`
 zero12 = `${rbrb12}`
 
-let perfect = (pickRandom(['Anjir GG', 'Mantap', 'Sempurna', 'Dapet sesuatu', 'Besar Nih']))
+let perfect = (pickRandom(['GG', 'Great', 'Perfect', 'Got something', 'This is great']))
 
 hsl = 
 `*《 Hunting Results This Time》* 
