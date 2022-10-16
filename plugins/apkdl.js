@@ -2,10 +2,10 @@ let axios = require("axios")
 let fetch = require('node-fetch')
 let handler = async(m, { conn, text }) => {
 
-    if (!text) return conn.reply(m.chat, 'Masukan Command nya', m)
+    if (!text) return conn.reply(m.chat, 'Enter the command', m)
 	await conn.reply(m.chat, mess.wait, 0, { thumbnail: await(await fetch(ext.thum)).buffer(), contextInfo: {
                   externalAdReply: {
-                    mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
+                    mediaUrl: 'https://telegra.ph/file/232f4302a0240b8cd0d97.png',
                     title: ext.title,
                     body: ext.body,
                     thumbnail: await(await fetch(ext.thum)).buffer()
@@ -13,10 +13,10 @@ let handler = async(m, { conn, text }) => {
                  }
                }
            )
-	axios.get(`http://hujanapi.xyz/api/apkpuredl?url=${text}&apikey=qrQuAVo14XfmRIr`).then ((res) => {
+	axios.get(`https://api.lolhuman.xyz/api/apkdownloader?apikey=85faf717d0545d14074659ad&package={text}`).then ((res) => {
 	 	let hasil = `
-Nama App : ${res.data.result.title}
-Link download : ${res.data.result.url}`
+Name App : ${result.apk_name}
+Link download : ${result.apk_link}`
 
     conn.reply(m.chat, hasil, m)
 	})
