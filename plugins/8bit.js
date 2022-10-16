@@ -12,7 +12,7 @@ gay = `sayang`
 
     await conn.reply(m.chat, mess.wait, 0, { thumbnail: await(await fetch(ext.thum)).buffer(), contextInfo: {
                   externalAdReply: {
-                    mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
+                    mediaUrl: 'https://telegra.ph/file/232f4302a0240b8cd0d97.png',
                     title: ext.title,
                     body: ext.body,
                     thumbnail: await(await fetch(ext.thum)).buffer()
@@ -23,7 +23,7 @@ gay = `sayang`
   let q = m.quoted ? m.quoted : m
   let media = await q.download()
   let img = await uploadImage(media)
-  let buffer = await (await fetch('http://zekais-api.herokuapp.com/pixelate?url=' + img + '&apikey=OneDayOneCharity')).buffer() // Masukan ApiKeymu disini..
+  let buffer = await (await fetch('http://zekais-api.herokuapp.com/pixelate?url=' + img + '&apikey=D9RwIvZv')).buffer() // Enter your ApiKey here..
   let res = await fetch('https://raw.githubusercontent.com/herokuapp-com/kuhong-api/main/info/credit.json')
   let json = await res.json()
 
